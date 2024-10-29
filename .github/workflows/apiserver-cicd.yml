@@ -15,6 +15,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+      
+      - name: 'Make Gradlew Executable'
+        run: 'chmod +x ./gradlew'
 
       - name: 'Build'
         run: './gradlew clean build'
